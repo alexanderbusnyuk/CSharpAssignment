@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EnemySettings_Walker
   m_EditorClassIdentifier: 
   enemy:
-    enemyType: 0
+    enemyType: 2
     enemyReferencePrefab: {fileID: 5575958383597271655, guid: adb538fb62f67c944b3b59410c1db707, type: 3}
     totalHealth: 100
     patrolSpeed: 2

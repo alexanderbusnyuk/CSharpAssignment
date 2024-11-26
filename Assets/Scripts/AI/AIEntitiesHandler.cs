@@ -16,6 +16,7 @@ namespace Mechadroids {
 
         public void Initialize() {
             // initialize all enemies here
+            /*
             foreach(EnemyGroup enemy in aiSettings.enemiesToSpawn) {
                 for(int i = 0; i < enemy.enemyCount; i++) {
                     EnemyEntityHandler enemyEntityHandler = new(enemy.enemySettings, parentHolder);
@@ -23,6 +24,7 @@ namespace Mechadroids {
                     EnemyEntityHandlers.TryAdd(i, enemyEntityHandler);
                 }
             }
+            */
         }
 
         public void Tick() {
@@ -43,6 +45,10 @@ namespace Mechadroids {
                 enemyEntityHandler.Value.Dispose();
             }
             EnemyEntityHandlers.Clear();
+        }
+
+        public void SpawnEnemies() {
+
         }
     }
 }

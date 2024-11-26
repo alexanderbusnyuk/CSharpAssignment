@@ -114,16 +114,10 @@ namespace Mechadroids {
                 hitIndicatorInstance = null;
             }
         }
-
-        
     }
 
     // code that handles the player functionality. Should to the correct state
 
-        // 
-        //
-        // 
-        //
         // private void UpdateHitIndicator() {
         //     var ray = new Ray(playerReference.barrelEnd.position, playerReference.barrelEnd.forward);
         //     if(Physics.Raycast(ray, out RaycastHit hitInfo, Mathf.Infinity, playerReference.aimLayerMask)) {

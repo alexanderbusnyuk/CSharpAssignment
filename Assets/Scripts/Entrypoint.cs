@@ -43,6 +43,10 @@ namespace Mechadroids {
             aiEntitiesHandler = new AIEntitiesHandler(aISettings, aiParentTransform);
             aiEntitiesHandler.Initialize();
 
+            foreach (GameObject spawner in GameObject.FindGameObjectsWithTag("EnemySpawner"))
+                {
+                spawner.GetComponent<EnemySpawnTrigger>().Initialize(aiEntitiesHandler);
+            }
             // it is very important to control the initialization state to avoid running tick functions with data that is not yet initialized
             initialized = true;
         }
